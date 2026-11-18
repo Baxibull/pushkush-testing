@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PushKush — Modern Digital Growth</title>
+  <meta name="description" content="PushKush testing environment landing page.">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    :root { --pk-primary: #a2e436; --pk-dark: #10120e; }
+    body { min-height: 100vh; }
+    .hero { min-height: 88vh; display: grid; align-items: center; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+    .eyebrow { display: inline-block; padding: .35rem .75rem; border: 2px solid #000; background: var(--pk-primary); font-weight: 700; }
+    .hero h1 { max-width: 760px; font-size: clamp(3rem, 8vw, 7rem); line-height: .92; letter-spacing: -.06em; }
+    .hero-copy { max-width: 620px; font-size: 1.15rem; }
+    .visual { min-height: 520px; border: 2px solid #000; background: var(--pk-primary); box-shadow: 16px 16px 0 #000; position: relative; overflow: hidden; }
+    .visual::before { content: ""; position: absolute; width: 330px; height: 330px; border: 2px solid #000; border-radius: 50%; background: #fff; right: -70px; top: -70px; }
+    .visual::after { content: "PK"; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-8deg); width: 220px; height: 220px; display: grid; place-items: center; border: 3px solid #000; border-radius: 50%; background: #fff; font-size: 6rem; font-weight: 800; box-shadow: 10px 10px 0 #000; }
+    .feature-card { height: 100%; }
+    @media (max-width: 768px) {
+      .hero { padding: 4rem 0; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .visual { min-height: 380px; }
+      .visual::after { width: 180px; height: 180px; font-size: 5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body border-bottom fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">PUSHKUSH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="navbar-nav ms-auto align-items-lg-center">
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="btn btn-primary ms-lg-3" href="#contact">Start a project</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero pt-5">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="eyebrow mb-4">DIGITAL GROWTH STUDIO</span>
+            <h1 class="fw-bold mb-4">Push your brand forward.</h1>
+            <p class="hero-copy mb-4">Bold strategy, sharp design, and digital experiences built to turn attention into lasting growth.</p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a class="btn btn-primary btn-lg" href="#contact">Work with us</a>
+              <a class="btn btn-outline-dark btn-lg" href="#services">Explore services</a>
+            </div>
+          </div>
+          <div class="visual" aria-label="PushKush brand graphic"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 border-top" id="services">
+      <div class="container">
+        <div class="mb-5">
+          <span class="text-uppercase fw-bold">What we do</span>
+          <h2 class="display-5 fw-bold mt-2">Built for momentum.</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card feature-card"><div class="card-body p-4"><span class="badge bg-primary text-dark mb-3">01</span><h3>Brand Strategy</h3><p class="mb-0">Positioning, identity, and creative direction that makes your business impossible to ignore.</p></div></article>
+          </div>
+          <div class="col-md-4">
+            <article class="card feature-card"><div class="card-body p-4"><span class="badge bg-info text-dark mb-3">02</span><h3>Digital Design</h3><p class="mb-0">Fast, accessible websites and interfaces created for real people and measurable outcomes.</p></div></article>
+          </div>
+          <div class="col-md-4">
+            <article class="card feature-card"><div class="card-body p-4"><span class="badge bg-warning text-dark mb-3">03</span><h3>Growth Campaigns</h3><p class="mb-0">Focused campaigns that bring the right audience closer and keep your brand moving.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white" id="about">
+      <div class="container"><div class="row align-items-end g-4"><div class="col-lg-8"><h2 class="display-4 fw-bold mb-0">Less noise. More impact.</h2></div><div class="col-lg-4"><p class="mb-0">We combine clear thinking with bold execution to help ambitious brands make their next move.</p></div></div></div>
+    </section>
+
+    <section class="py-5" id="contact">
+      <div class="container text-center"><h2 class="display-5 fw-bold mb-3">Ready to push further?</h2><p class="mb-4">Let’s build something that gets results.</p><a class="btn btn-primary btn-lg" href="mailto:hello@baxibull.co.za">hello@baxibull.co.za</a></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
